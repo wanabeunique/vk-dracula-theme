@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "vk_theme",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://vk.com/*"],
+      "js": ["script.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}

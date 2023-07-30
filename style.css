@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+:root, [scheme=vk_custom] {
+  --main-color: #383A59;
+  --font-color: #BD93F9;
+  --green-color: #50fa7b;
+  --bg-color: #282A36;
+  --pink-color: #ff79c6;
+  --current-line: #44475a;
+  --cyan-color: #8be9fd;
+  --white-color: #f8f8f2;
+  --separator_common: var(--current-line) !important;
+  --separator_alternate: var(--current-line) !important;
+  --input_border: var(--current-line);
+  --vkui--color_text_link: var(--green-color) !important;
+  --vkui--color_header_background: var(--bg-color) !important;
+  --vkui--color_background_content: var(--main-color) !important;
+  --vkui--color_background_modal: var(--main-color) !important;
+  --vkui--color_text_subhead: var(--white-color) !important;
+  --vkui--color_icon_secondary: var(--font-color) !important;
+  --vkui--color_icon_accent: var(--font-color) !important;
+  --vkui--color_text_primary: var(--white-color) !important;
+  --vkui--color_background_accent_themed: var(--font-color) !important;
+  --text_name: var(--pink-color) !important;
+  --vkui--vkontakte_color_im_text_name: var(--pink-color) !important;
+  --text_primary: var(--font-color) !important;
+  --text_subhead: var(--font-color) !important;
+  --text_secondary: var(--font-color) !important;
+  --button_secondary_background: var(--font-color) !important;
+  --button_secondary_foreground: var(--main-color) !important;
+  --button_primary_background: var(--font-color) !important;
+  --vkui--color_text_contrast_themed: var(--main-color) !important;
+  --vkui--color_background_tertiary: var(--main-color) !important;
+  --vkui--color_background: var(--main-color) !important;
+}
+
+body, [scheme=vk_custom] {
+  background: var(--bg-color) !important;
+}
+body .HeaderNav__item--logo, [scheme=vk_custom] .HeaderNav__item--logo {
+  display: none;
+}
+body .vkuiSearch__control, [scheme=vk_custom] .vkuiSearch__control {
+  display: none;
+}
+body #page_header_cont, [scheme=vk_custom] #page_header_cont {
+  background: var(--bg-color);
+}
+body .im-page_classic.im-page .im-page--header, [scheme=vk_custom] .im-page_classic.im-page .im-page--header {
+  border-top: none;
+}
+body .vkuiGroup--card, [scheme=vk_custom] .vkuiGroup--card {
+  background: var(--main-color);
+}
+body .vkuiSpacing, [scheme=vk_custom] .vkuiSpacing {
+  background: inherit;
+}
+body .vkuiSplitLayout__inner, [scheme=vk_custom] .vkuiSplitLayout__inner {
+  background: var(--bg-color);
+}
+body .vkuiSplitCol, [scheme=vk_custom] .vkuiSplitCol {
+  background: var(--bg-color);
+}
+body .ui_tab_new.ui_tab_sel, body .ui_tab_new.ui_tab_group_sel, body .ui_tab_new.ui_tab_sel:hover, body .ui_tab_new.ui_tab_group_sel:hover, body .ui_tab_new.ui_tab_sel:active, body .ui_tab_new.ui_tab_group_sel:active, [scheme=vk_custom] .ui_tab_new.ui_tab_sel, [scheme=vk_custom] .ui_tab_new.ui_tab_group_sel, [scheme=vk_custom] .ui_tab_new.ui_tab_sel:hover, [scheme=vk_custom] .ui_tab_new.ui_tab_group_sel:hover, [scheme=vk_custom] .ui_tab_new.ui_tab_sel:active, [scheme=vk_custom] .ui_tab_new.ui_tab_group_sel:active {
+  background: var(--font-color);
+  color: var(--main-color);
+}
+body .OwnerContentTabAudiosItem__cover, [scheme=vk_custom] .OwnerContentTabAudiosItem__cover {
+  background: var(--font-color);
+  color: var(--main-color);
+}
+body .vkuiButton__in, [scheme=vk_custom] .vkuiButton__in {
+  background: var(--font-color);
+  color: var(--main-color);
+  border-radius: 5%;
+}
+body .FCThumb__link, [scheme=vk_custom] .FCThumb__link {
+  background: var(--main-color);
+}
+body .FCPanel__list, [scheme=vk_custom] .FCPanel__list {
+  box-shadow: none;
+  background: var(--main-color);
+}
+body .ui_search_new .ui_search_button_search, [scheme=vk_custom] .ui_search_new .ui_search_button_search {
+  background: var(--font-color);
+  color: var(--main-color);
+}
+body .PostBottomAction--withBg, [scheme=vk_custom] .PostBottomAction--withBg {
+  background: var(--font-color);
+  color: var(--main-color);
+}
+body .im-mess.im-mess_unread:not(.im-mess_light), [scheme=vk_custom] .im-mess.im-mess_unread:not(.im-mess_light) {
+  background: var(--main-color);
+  color: var(--cyan-color);
+}
+body .im-chat-input, [scheme=vk_custom] .im-chat-input {
+  background: var(--main-color);
+}
+body .PostButtonReactions__title, [scheme=vk_custom] .PostButtonReactions__title {
+  color: var(--main-color);
+}
+body .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, [scheme=vk_custom] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text {
+  color: var(--cyan-color);
+}
+body .im-mess.im-mess_unread:last-child::before, body .im-mess.im-mess_selected:last-child::before, [scheme=vk_custom] .im-mess.im-mess_unread:last-child::before, [scheme=vk_custom] .im-mess.im-mess_selected:last-child::before {
+  background: inherit;
+}
+body .input.text, body input.search, body input.big_text, body input.dark, body .fakeinput, body div[contenteditable=true], body textarea, [scheme=vk_custom] .input.text, [scheme=vk_custom] input.search, [scheme=vk_custom] input.big_text, [scheme=vk_custom] input.dark, [scheme=vk_custom] .fakeinput, [scheme=vk_custom] div[contenteditable=true], [scheme=vk_custom] textarea {
+  background: inherit;
+}
+body .im-mess.im-mess_unread + .im-mess::before, body .im-mess.im-mess_selected + .im-mess::before, [scheme=vk_custom] .im-mess.im-mess_unread + .im-mess::before, [scheme=vk_custom] .im-mess.im-mess_selected + .im-mess::before {
+  background: none;
+}
+body .nim-dialog .nim-dialog--name .nim-dialog--name-w, [scheme=vk_custom] .nim-dialog .nim-dialog--name .nim-dialog--name-w {
+  color: var(--pink-color);
+}
+
+.vk_custom-params {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.vk_custom-main, .vk_custom-secondary {
+  width: 100px;
+  height: 48px;
+  background: var(--main-color);
+}/*# sourceMappingURL=style.css.map */
